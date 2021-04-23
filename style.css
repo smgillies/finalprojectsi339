@@ -1,0 +1,516 @@
+.flier{
+	display: none;
+}
+body{
+	margin:1%;
+	padding:1%;
+	font-size:150%;
+	font-family: "Courier New", monospace;
+}
+footer>#text{
+	font-size:2px;
+}
+head{
+	font-family: "Courier New", monospace;
+}
+mark{
+
+	background-color: white;
+	color: black;
+	font-style: bold;
+}
+nav > img{
+	width: 150px;
+	height: 150px;
+	padding:0px;
+	margin:0px;
+}
+
+.otherlink{
+	color: black;
+	text-decoration: none;
+}
+
+nav{
+	font-family: "Courier New", monospace;
+	display: flex;
+	border-bottom: 3px solid black;
+  	padding: 25px 0; 
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	color: black;
+}
+
+header>h1{
+	font-family: "Courier New", monospace;
+	font-size: 3em;
+	font-weight: bold;
+}
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 60px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 10px;
+	height: 60px;
+  }
+  
+.fa:hover {
+	  opacity: 0.7;
+  }
+  
+.fa-linkedin {
+	color: #007bb5;
+  }
+
+.nav_links > li{
+	display: flex;
+	flex-direction: row;
+	color: black;
+	padding-right: 25px;
+}
+
+footer{
+	border-top: 3px solid black;
+	display: flex; 
+	justify-content: space-between;
+}
+header{
+	font-family: 'Montserrat', sans-serif;
+	background-image: url("../imgsProj/pastel_map.jpeg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;  
+	height: 500px;
+	border-bottom: 3px solid black;
+	text-align: center;
+}
+
+
+.flip-card {
+	background-color: transparent;
+	width: 275px;
+	height: 300px;
+	perspective: 1000px;
+}
+
+header > img{
+	width: 200px;
+	height: 100px;
+	opacity: .5;
+}
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	
+}
+
+.flip-card:hover .flip-card-inner, 
+.flip-card:focus-within .flip-card-inner,
+.flip-card:active .flip-card-inner
+.flip-card:focus .flip-card-inner{
+	transform: rotateY(180deg);
+} 
+
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	background-color: white;
+}
+  
+.flip-card-front {
+	
+	width: 275px;
+	height: 300px;
+}
+ 
+.flip-card-front > img{
+	width: 275px;
+	height: 300px;
+	padding: 0px;
+	margin: 0px;
+}
+.flip-card-back {
+	background-color: #ffedd2;
+	color: black;
+	transform: rotateY(180deg);
+	text-decoration: bold;
+}
+.flip-card-back >p{
+	font-size:.9em;
+}
+.flip-card-front a{
+	font-size: 2px;
+	margin:0px;
+	padding:0px;
+	color: white;	
+	text-decoration: none;
+	position:absolute;
+	text-align: center;
+}
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+}
+h2{
+	font-size:1.5em;
+	font-weight:lighter;
+}
+
+
+img{
+    height: 200px;
+    width:auto;
+    padding: 15px;
+    border-radius: 10px;
+	margin: 5px;
+	
+}
+
+.grow{
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	transition: all 2s ease;
+
+}
+.grow:hover{
+	transform: scale(1.2);
+}
+
+figure{
+	font-size: small;
+	text-align: center;
+}
+
+p, h1, h2 {
+	padding: 10px;
+}
+
+header, nav, main, h1, footer{
+	color: black;
+	margin: 10px 0;
+}
+
+.skip a{
+	background: white;
+	color: black ;
+	left: 0;
+	padding: 7px;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 1;
+	position: absolute;
+	top: -50px;
+  }
+
+.skip a:focus{
+	position: absolute;
+	top: 10px
+}
+
+.current{
+	color: black;
+	font-weight: bold;
+}
+
+.grid {
+	justify-items: stretch;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 5px;
+	background-color: white;
+	padding: 10px;
+	width:auto;
+	height: auto;
+	font-size: 30px;
+	border-radius: 5px;
+	margin: 0px;
+	column-gap: 0px;
+}
+
+
+.grid > div {
+	background-color:#ffedd2;
+	width:auto;
+	height: auto;
+	text-align: center;
+	padding: 0px;
+}
+
+
+@media screen and (min-width: 850px){
+	.nav_links{
+		display: flex;
+    	flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		list-style: none;
+	}
+	header>h1{
+		font-size: 5em;
+		
+	}
+}
+
+#content figcaption{
+	font-size: 20px;
+	padding: 10px;
+	border-bottom: 3px solid black;
+}
+
+@media screen and (max-width: 800px){
+	.nav_links{
+	  display: flex;
+	  flex-direction: column;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  align-content: center;
+	}
+	header{
+		background-image: url("../imgsProj/planeShot.jpeg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover; 
+		height: 500px; 
+	}
+	.grid{
+		grid-template-columns: 1fr;
+	}
+	
+
+}
+  
+#content figcaption{
+	font-size: 20px;
+	padding: 10px;
+	border-bottom: 3px solid black;
+}
+
+
+@media all and (prefers-reduced-motion:reduce){
+	.grow{
+		-webkit-transition: none;
+		-moz-transition: none;
+		-ms-transition: none;
+		transition: none;
+	}
+	.grow:hover{
+		transform: none;
+	}
+	.flip-card:hover .flip-card-inner{
+		transform:none;
+	}
+	.flip-card-back {
+	
+		transform: none;
+	}
+	.flip-card:hover .flip-card-inner, 
+	.flip-card:focus-within .flip-card-inner,
+	.flip-card:active .flip-card-inner
+	.flip-card:focus .flip-card-inner{
+		transform:none;
+	}
+	@-webkit-keyframes fly {}
+    @keyframes fly {}
+    @-webkit-keyframes fly {}
+    @keyframes fly {}
+
+    * {
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation:  none !important;
+        animation: none !important;
+	}
+	header{
+		background-attachment: scroll;
+	}
+
+}
+
+
+@media screen and (min-width: 400px){
+  
+	p{
+		font-size: 25px;
+	}
+	header>h1{
+	  font-size:100px;
+	}
+
+	nav{
+		font-size:40px;
+	}	
+	nav > img{
+		width: 215px;
+		height: 175px;
+	}
+	#container1{
+		display: grid;
+		grid-template-rows: auto auto ;
+		grid-template-columns: auto auto;
+		justify-content: space-evenly;
+	}
+
+	header{
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	#introduction{
+		font-size:130%;
+		text-align: center;
+		margin:30px;
+	}
+	#traveling{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		font-size: 125%;
+		border-top: 3px solid black;
+		border-bottom: 3px solid black;
+	}
+	iframe{
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+
+	.item1{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 5;
+		grid-row-end:6;
+		width: 40%;
+		height:auto;
+		
+	}
+	.item2{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 4;
+		grid-row-end:5;
+		width: 40%;
+		height:auto;
+	}
+	.item3{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 6;
+		grid-row-end:7;
+		width: 40%;
+		height:auto;
+	}
+	#highlighted{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 7;
+		grid-row-end:8;
+		font-size: 125%;
+		border-top: 3px solid black;
+		border-bottom: 3px solid black;
+	}
+	.item_a > img, .item_c > img, .item_d > img, .item_e > img, .item_g > img, .item_h > img, .item_i > img{
+		width: 80%;
+		height:auto;
+	}
+	#container > img{
+		width: 70%;
+		height:auto;
+	}
+	#content > figure > img{
+		width: 70%;
+		height:auto;
+	}
+	
+}
+  
+@media screen and (min-width: 800px){
+	.nav_links{
+		font-size: 30px;
+	}
+	.flier {
+		display:inline;
+		pointer-events: none;
+	}
+	
+	.flier > * {
+	/* Adjust animation duration to change the element’s speed */
+			animation: fly 50s linear infinite;
+			pointer-events: none !important;
+		top: 0;
+		left: 0;
+		transform: translateX(-120%) translateY(-120%) rotateZ(0);
+		position: fixed;
+		animation-delay: 1s;
+		z-index: 999999;
+	}
+	
+	 /* Keyframe values control where the element will begin
+		and end its trajectory across the screen. Each rule
+		represents a path the element follows across the screen. */
+	
+	
+	@keyframes fly {
+	
+		98.001%, 0% {
+					display: block;
+			transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+		}
+	
+		15% {
+			transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+		}
+	
+		15.001%, 18% {
+			transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+		}
+	
+		40% {
+			transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+		}
+	
+		40.001%, 43% {
+			transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+		}
+	
+		65% {
+			transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+		}
+	
+		65.001%, 68% {
+			transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+		}
+	
+		95% {
+			transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+		}
+	}
+	
+	
+	.item1, .item2, .item3{
+		width: 20%;
+	}
+	#container >img{
+		width: 300px;
+		height: auto;
+		margin: 30px;
+	}
+	#content > figure > img{
+		width: 50%;
+		height:auto;
+	}
+	
+	 
+}
