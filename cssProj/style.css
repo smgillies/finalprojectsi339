@@ -7,11 +7,18 @@ body{
 	font-size:150%;
 	font-family: "Courier New", monospace;
 }
-
+footer>#text{
+	font-size:2px;
+}
 head{
 	font-family: "Courier New", monospace;
 }
+mark{
 
+	background-color: white;
+	color: black;
+	font-style: bold;
+}
 nav > img{
 	width: 150px;
 	height: 150px;
@@ -47,16 +54,15 @@ header>h1{
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 10px;
+	height: 60px;
   }
   
-  .fa:hover {
+.fa:hover {
 	  opacity: 0.7;
   }
   
 .fa-linkedin {
-	
 	color: #007bb5;
-	
   }
 
 .nav_links > li{
@@ -82,6 +88,7 @@ header{
 	text-align: center;
 }
 
+
 .flip-card {
 	background-color: transparent;
 	width: 275px;
@@ -92,6 +99,7 @@ header{
 header > img{
 	width: 200px;
 	height: 100px;
+	opacity: .5;
 }
 .flip-card-inner {
 	position: relative;
@@ -122,8 +130,7 @@ header > img{
 }
   
 .flip-card-front {
-	background-color: #bbb;
-	color: black;
+	
 	width: 275px;
 	height: 300px;
 }
@@ -138,6 +145,7 @@ header > img{
 	background-color: #ffedd2;
 	color: black;
 	transform: rotateY(180deg);
+	text-decoration: bold;
 }
 .flip-card-back >p{
 	font-size:.9em;
@@ -168,7 +176,8 @@ img{
     width:auto;
     padding: 15px;
     border-radius: 10px;
-    margin: 5px;
+	margin: 5px;
+	
 }
 
 .grow{
@@ -179,7 +188,7 @@ img{
 
 }
 .grow:hover{
-	transform: scale(1.5);
+	transform: scale(1.2);
 }
 
 figure{
@@ -243,6 +252,7 @@ header, nav, main, h1, footer{
 	padding: 0px;
 }
 
+
 @media screen and (min-width: 850px){
 	.nav_links{
 		display: flex;
@@ -272,7 +282,7 @@ header, nav, main, h1, footer{
 	  align-content: center;
 	}
 	header{
-		background-image: url("../imgsProj/PlaneShot.jpeg");
+		background-image: url("../imgsProj/planeShot.jpeg");
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-size: cover; 
@@ -281,6 +291,7 @@ header, nav, main, h1, footer{
 	.grid{
 		grid-template-columns: 1fr;
 	}
+	
 
 }
   
@@ -490,8 +501,16 @@ header, nav, main, h1, footer{
 	
 	.item1, .item2, .item3{
 		width: 20%;
-
-
 	}
+	#container >img{
+		width: 300px;
+		height: auto;
+		margin: 30px;
+	}
+	#content > figure > img{
+		width: 50%;
+		height:auto;
+	}
+	
 	 
 }
